@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  background-color: #f2f2f2;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.text-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  margin-top: 30px;
+  align-self: center;
+}
+
+.text-resume {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin-right: 50px;
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  margin-top: 30px;
+  align-self: center;
+}
+.presentation {
+  margin-left: 150px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 160px;
+  margin-left: 150px;
+}
+.name-img-presentation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+}
+.vector-logo {
+  width: 15px;
+  height: 12px;
+  align-self: center;
+}
+h1 {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 61px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.front-end {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 7px;
+  margin-top: 0px;
+}
+.line {
+  border: 1px solid #000000;
+  width: 50px;
+}
+.logos {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 5px;
+  margin-bottom: 100px;
+}
+.github,
+.linkedin {
+  width: 30px;
+  height: 30px;
+}
+.container-intro {
+  background-color: #425bb3;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+.title-intro {
+  margin-left: 150px;
+  margin-top: 60px;
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  color: #ffffff;
+}
+.text-intro {
+  margin-left: 150px;
+  margin-right: 100px;
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.text-title-project {
+  margin-left: 150px;
+  margin-top: 50px;
+  margin-bottom: 500px;
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  color: #000000;
+}
+.copy-right {
+  background-color: #425bb3;
+  display: flex;
+  justify-content: center;
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+}
+
+/* links hover */
+li::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+li:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+li::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: #425bb3;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+li:hover {
+  color: white;
+}
+
+li {
+  position: relative;
+  transition: color 0.3s ease;
+}
