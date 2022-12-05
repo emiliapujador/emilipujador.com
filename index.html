@@ -12,24 +12,26 @@
       href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.cdnfonts.com/css/anonymous-pro"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header class="nav">
-      <div></div>
+    <header id="header">
       <ul class="text-menu">
-        <li>HOME</li>
-        <li>BRIEF INTRO</li>
-        <li>PERSONAL PROJECTS</li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#personal-projects">PERSONAL PROJECTS</a></li>
       </ul>
-      <ul class="resume">
-        <li class="text-resume">Download my resume</li>
-      </ul>
+      <!-- <ul class="resume">
+         <li class="text-resume">Download my resume</li> 
+      </ul> -->
     </header>
     <main>
       <div class="presentation">
         <h1>Hi! I'm Maria Emilia Pujador.</h1>
         <div class="name-img-presentation">
-          <h2 class="front-end">Front End Developer</h2>
+          <h2 class="front-end">Frontend Developer</h2>
           <img src="./logos/Vector.png" class="vector-logo" />
         </div>
         <div class="line"></div>
@@ -37,32 +39,169 @@
           <a href="https://github.com/emiliapujador" target="_blank"
             ><img src="./logos/github.png" class="github" />
           </a>
-          <img src="./logos/linkedin.png" class="linkedin" />
+          <a href="https://www.linkedin.com/in/maria-emilia-pujador-49307b258/"
+            ><img src="./logos/linkedin.png" class="linkedin"
+          /></a>
         </div>
       </div>
+      <section class="section-intro" id="about">
+        <div class="container-intro">
+          <h2 class="title-intro">About me</h2>
+          <p class="text-intro">
+            I am a Software Engineer in the making, currently focused on
+            Frontend. My background in Communication Science, marketing and
+            journalism allows me to transfer my soft skills and knowledge in
+            design and storytelling into tech. I am a self taught learner and
+            passionate about web design and development. I enjoy challenges,
+            working in a team and learning new technologies. To put my learning
+            into practise I design and code new projects. You can reach me at
+            emiliapujador@gmail.com and Linkedin.
+          </p>
+        </div>
+      </section>
+      <section id="personal-projects">
+        <div class="container-projects">
+          <h2 class="text-title-project">Personal projects</h2>
 
-      <div class="container-intro">
-        <h2 class="title-intro">Brief intro</h2>
-        <p class="text-intro">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-      </div>
-      <div class="container-projects">
-        <h2 class="text-title-project">Personal projects</h2>
-      </div>
+          <div class="project-card">
+            <div class="project-container-info">
+              <div class="project-name-logo">
+                <h2 class="project-name">
+                  <a href="https://rosanurserieslondon.netlify.app/"
+                    >Rosa Nurseries</a
+                  >
+                </h2>
+                <a href="https://github.com/emiliapujador/rosa-nurseries-react"
+                  ><img
+                    src="./logos/github.png"
+                    class="project-github"
+                    alt="Github logo"
+                /></a>
+              </div>
+              <div class="project-description">
+                <p class="project-description-p">
+                  For my final project in the Web Development course from Code
+                  First Girls, my teammate and I built a plant nursery webpage.
+                  Since I finished the course on late July, I learned Javascript
+                  in depth and started learning React. As practice, I added more
+                  features to that project. For instance, I added a e-shop
+                  including a cart, divided the website in React components and
+                  made the website mobile friendly. I learnt how to use and
+                  modify state in React, added React router and different
+                  features from the library. My next step will be talking to
+                  APIs from the client and include that in the plant nursery
+                  website.
+                </p>
+              </div>
+              <div class="technologies">
+                <span>React</span>
+                <span>React Router</span>
+                <span>Bootstrap</span>
+                <span>Figma</span>
+                <span>Netlify</span>
+              </div>
+            </div>
+            <div class="container-img-project">
+              <a href="https://rosanurserieslondon.netlify.app/"
+                ><img
+                  class="img-project"
+                  src="./images/RosaNurseries.png"
+                  alt="Rosa Nurseries Webpage"
+              /></a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-container-info">
+              <div class="project-name-logo">
+                <h2 class="project-name">
+                  <a href="https://emilia-pujador-calculator.netlify.app/">
+                    Calculator</a
+                  >
+                </h2>
+                <a href="https://github.com/emiliapujador/calculator-javascript"
+                  ><img
+                    src="./logos/github.png"
+                    class="project-github"
+                    alt="Github logo"
+                /></a>
+              </div>
+              <div class="project-description">
+                <p class="project-description-p">
+                  After learning Javascript I spent some time putting together a
+                  calculator with all the concepts I learned. I understood how
+                  the DOM works and how to add interactivity to a website.
+                </p>
+              </div>
+              <div class="technologies">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Javascript</span>
+                <span>Figma</span>
+                <span>Netlify</span>
+              </div>
+            </div>
+            <div class="container-img-project">
+              <a href="https://emilia-pujador-calculator.netlify.app/">
+                <img
+                  class="img-project"
+                  src="./images/Calculator.png"
+                  alt="Calculator Webpage"
+              /></a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-container-info">
+              <div class="project-name-logo">
+                <h2 class="project-name">
+                  <a href="https://express.adobe.com/page/a8u9R1ZMQpzQ7/"
+                    >Sobreviviente
+                  </a>
+                </h2>
+              </div>
+              <div class="project-description">
+                <p class="project-description-p">
+                  This is an assigment I did at university in a subject
+                  dedicated to new technologies. The task consisted of using
+                  Adobe Express to create a webpage with an eye-catching design
+                  and an emotional storytelling. In my case, I wrote about an
+                  inspiring woman who survived an earthquake in my hometown in
+                  1944.
+                </p>
+              </div>
+              <div class="technologies">
+                <span>Adobe Express</span>
+              </div>
+            </div>
+            <div class="container-img-project">
+              <a href="https://express.adobe.com/page/a8u9R1ZMQpzQ7/"
+                ><img
+                  class="img-project"
+                  src="./images/Sobreviviente.png"
+                  alt="Sobreviviente Webpage"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-      <p class="copy-right">
-        © 2022 - María Emilia Pujador. All rights reserved.
-      </p>
+      <p class="copy-right">© 2022 - María Emilia Pujador.</p>
     </footer>
+    <script>
+      // get a reference to the header html element
+      const header = document.getElementById("header");
+      window.addEventListener("scroll", () => {
+        // if we scroll by more than 50
+        if (window.scrollY > 50) {
+          // add the header-scroll class
+          header.classList.add("header-scroll");
+        } else {
+          // remove the class otherwise
+          header.classList.remove("header-scroll");
+        }
+      });
+    </script>
   </body>
 </html>
